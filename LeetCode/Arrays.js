@@ -58,3 +58,17 @@ const climbStairs = function(number) {
   return F[number];
 };
 
+/**
+ * Number 58
+ * @description Return the length of the last word in the string.
+ * @param {String} string 
+ * @returns {Number}
+ */
+const lengthOfLastWord = (string) => {
+  const normalizedString = string
+    .split(' ')
+    .map((word) => word.trim())
+    .filter((word) => word !== '');
+  const indexOfLastWord = normalizedString.length - 1;
+  return normalizedString[indexOfLastWord].length;
+};

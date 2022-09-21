@@ -113,5 +113,40 @@
 //   return counter;
 // };
 
+function find_the_way_of_highest_cost(N, M, prices) {
+  const costs = generate_matrix(N, M, 0);
+  costs[0][0] = prices[0][0];
+  for (let i = 1; i < N; i += 1) {
+    costs[i][0] = prices[i][0] + costs[i - 1][0];
+  }
+  for (let j = 1; j < M; j += 1) {
+    costs[0][j] = prices[0][j] + costs[0][j - 1];
+  }
+  for (let i = 1; i < N; i += 1) {
+    for (let j = 1; j < M; j += 1) {
+      costs[i][j] = Math.max(costs[i - 1][j], costs[i][j - 1]) + prices[i][j];
+    }
+  }
+  // ВОССТАНОВЛЕНИЕ МАРШРУТА
+  const wayback = [];
+  let i = N - 1;
+  let j = M - 1;
+  while (i !== 0 && j !== 0) {
+    wayback.push([i, j]);
+    const prev_max_cost = Math.max(costs[i - 1][j], costs[i][j - 1]);
+    if (prev_max_cost === costs[i - 1][j]) {
+      i -= 1;
+    }
+    else if (prev_max_cost === costs[i][j - 1]) {
+      j -= 1;
+    }
+    else {
+      i -= 1;
+      j -= 1;
+    }
+  }
+  return wayback;
+};
 
+const grid = [[1,3,1],[1,5,1],[4,2,1]];
 

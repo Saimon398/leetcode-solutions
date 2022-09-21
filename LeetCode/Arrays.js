@@ -95,11 +95,22 @@ const twoSum = (nums, target) => {
   // there's no valid answe
   return -1;
 };
-const nums = [2,7,11,15]
-const target = 9
 
-/**
- * { 7: 0}
- * [0, 1]
- * 
- */
+
+// Решение задачи через Решето Эратосфена. 
+
+const countPrimes = (number, counter = 0) => {
+  const primeNumbers = new Array(number).fill(true);
+  primeNumbers[0] = primeNumbers[1] = false;
+  for (let i = 2; i < number; i += 1) {
+    if(primeNumbers[i]) {
+      for (let j = 2 * i; j < number; j += i) {
+        primeNumbers[j] = false;
+      }
+      counter += 1;
+    }
+  }
+  return counter;
+};
+
+console.log(countPrimes(1));

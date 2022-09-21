@@ -72,3 +72,34 @@ const lengthOfLastWord = (string) => {
   const indexOfLastWord = normalizedString.length - 1;
   return normalizedString[indexOfLastWord].length;
 };
+
+const twoSum = (nums, target) => {
+  // key: Number that adds up to target
+  // value: Index the number is at
+  const twoSum = {};
+
+  // Iterate through nums using indices b/c we need the indices
+  // for the final ads
+  for(let i = 0; i < nums.length; i += 1) {
+    const currentNumber = nums[i];
+    // Case 1: We found a pair that adds up to target
+    if(currentNumber in twoSum) {
+      return [twoSum[currentNumber], i];
+    }
+    // Case 2: Add a new entry for the current number
+    else {
+      twoSum[target - currentNumber] = i;
+    }
+  }
+  // If we go through the entire for loop without returning
+  // there's no valid answe
+  return -1;
+};
+const nums = [2,7,11,15]
+const target = 9
+
+/**
+ * { 7: 0}
+ * [0, 1]
+ * 
+ */

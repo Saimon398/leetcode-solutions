@@ -1,7 +1,7 @@
 /**
  * @link https://leetcode.com/problems/palindrome-number/
  * @description Check if given number is a palindrome
- * @param {Number} number 
+ * @param {Number} number
  * @returns {Boolean}
  */
 const isPalindrome = (number) => {

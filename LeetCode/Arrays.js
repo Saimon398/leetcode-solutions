@@ -148,5 +148,21 @@ function find_the_way_of_highest_cost(N, M, prices) {
   return wayback;
 };
 
-const grid = [[1,3,1],[1,5,1],[4,2,1]];
+const reverse = (n) => {
+  if(n > 2 ** 31 || n < -(2 ** 31)) {
+    return 0;
+  }
+  let result = '';
+  const str = Math.abs(n).toString();
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    result += str[i];
+  }
+  result = Number(result);
+  if(result > 2 ** 31 || result < -(2 ** 31)) {
+    return 0;
+  }
+  return n < 0 ? -result : result;
+};
+
+
 

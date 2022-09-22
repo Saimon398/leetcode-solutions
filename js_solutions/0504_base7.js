@@ -5,7 +5,7 @@
  * @param {Number} base 
  * @returns {String}
  */
-const convertToBase7 = (number, base = 7) => {
+ const convertToBase7 = (number, base = 7) => {
   // Case 1: Return 0, if number equals 0
   if(number === 0) {
     return `${0}`;

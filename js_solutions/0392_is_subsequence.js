@@ -1,3 +1,10 @@
+/**
+ * @link https://leetcode.com/problems/is-subsequence/
+ * @description Return true if s is a subsequence of t, or false otherwise.
+ * @param {String} sub 
+ * @param {String} target 
+ * @returns 
+ */
 const isSubsequence = (sub, target) => {
   // If strings are the same length, they must be identical
   if(sub.length === target.length) {
@@ -25,4 +32,3 @@ const isSubsequence = (sub, target) => {
   }
   return i >= sub.length;
 };
-

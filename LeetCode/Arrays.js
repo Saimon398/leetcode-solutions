@@ -1,33 +1,16 @@
-/**
- * @link https://leetcode.com/problems/merge-sorted-array/
- * @description Merge nums1 and nums2 into a single array 
- * sorted in non-decreasing order.
- * @param {Object []} nums1 
- * @param {Number} m 
- * @param {Object []} nums2 
- * @param {Number} n 
- */
-const mergeSortedArray = (nums1, m, nums2, n) => {
-  // Iterate through both of the given arrays simultaneously
-  while(m > 0 && n > 0) {
-    const curr_1 = nums1[m - 1];
-    const curr_2 = nums2[n - 1];
+const s = "God Ding";
 
-    if(curr_1 >= curr_2) {
-      nums1[(m + n) - 1] = curr_1;
-      m -= 1;
+const reverseWords = (string) => {
+  // Split string into words
+  const words = string.split(' ');
+  const newWords = [];
+  for(let i = 0; i < words.length; i += 1) {
+    let newWord = '';
+    for (let k = words[i].length - 1; k >= 0; k -= 1) {
+      newWord += words[i][k];
     }
-    else { // curr_2 > curr_1
-      nums1[(m + n) - 1] = curr_2;
-      n -= 1;
-    }
+    newWords.push(newWord);
   }
-  // If there are smaller elements left in nums2, copy them over.
-  // No need to do this for leftover num1 elements, since we're
-  // merging into nums1 and the elements will already be there.
-  while (n > 0) {
-    nums1[n - 1] = nums2[n - 1];
-    n -= 1;
-  }
-  return nums1;
-}
+  return newWords.join(' ');
+};
+

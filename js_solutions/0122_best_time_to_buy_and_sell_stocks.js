@@ -1,3 +1,8 @@
+/**
+ * @link https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+ * @param {Object []} prices 
+ * @returns {Number}
+ */
 const maxProfit = (prices) => {
   let totalProfit = 0;
   const length = prices.length;

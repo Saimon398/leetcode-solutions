@@ -1,3 +1,9 @@
+/**
+ * @link https://leetcode.com/problems/jewels-and-stones/
+ * @param {String} jewels 
+ * @param {String} stones 
+ * @returns 
+ */
 const numJewelsandStones = (jewels, stones) => {
   const jewelsSet = new Set(jewels);
   let stonesCounter = 0;
@@ -6,7 +12,3 @@ const numJewelsandStones = (jewels, stones) => {
   }
   return stonesCounter;
 };
-
-
-
-console.log(numJewelsandStones)

@@ -5,7 +5,7 @@
  * @param {String} needle
  * @returns
  */
-const strStr = (haystack, needle) => {
+export default (haystack, needle) => {
   for (let i = 0; i < haystack.length; i += 1) {
     if (haystack.slice(i, needle.length + i) === needle) {
       return i;

@@ -5,7 +5,7 @@
  * @param {Number} target
  * @returns {Object []}
  */
-const twoSum = (nums, target) => {
+export default (nums, target) => {
   // key: Number that adds up to target
   // value: Index the number is at
   const twoSum = {};

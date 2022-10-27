@@ -1,24 +1,23 @@
 /**
  * @link https://leetcode.com/problems/merge-sorted-array/
- * @description Merge nums1 and nums2 into a single array 
+ * @description Merge nums1 and nums2 into a single array
  * sorted in non-decreasing order.
- * @param {Object []} nums1 
- * @param {Number} m 
- * @param {Object []} nums2 
- * @param {Number} n 
+ * @param {Object []} nums1
+ * @param {Number} m
+ * @param {Object []} nums2
+ * @param {Number} n
  */
- const mergeSortedArray = (nums1, m, nums2, n) => {
+const mergeSortedArray = (nums1, m, nums2, n) => {
   // Iterate through both of the given arrays simultaneously
-  while(m > 0 && n > 0) {
-    const curr_1 = nums1[m - 1];
-    const curr_2 = nums2[n - 1];
+  while (m > 0 && n > 0) {
+    const curr1 = nums1[m - 1];
+    const curr2 = nums2[n - 1];
 
-    if(curr_1 >= curr_2) {
-      nums1[(m + n) - 1] = curr_1;
+    if (curr1 >= curr2) {
+      nums1[(m + n) - 1] = curr1;
       m -= 1;
-    }
-    else { // curr_2 > curr_1
-      nums1[(m + n) - 1] = curr_2;
+    } else { // curr_2 > curr_1
+      nums1[(m + n) - 1] = curr2;
       n -= 1;
     }
   }

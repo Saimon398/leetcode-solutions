@@ -5,8 +5,8 @@
  * @returns {Boolean}
  */
 const isPalindrome = (number) => {
-  const convertedToString = number.toString();
-  for (let i = 0, j = convertedToString.length - 1; i < j; i += 1, j -= 1) {
+  const string = number.toString();
+  for (let i = 0, j = string.length - 1; i < j; i += 1, j -= 1) {
     if (string[i] !== string[j]) {
       return false;
     }

@@ -1,7 +1,7 @@
 /**
  * @description Return left border in binary search
- * @param {Object []} collection 
- * @param {Number} target 
+ * @param {Object []} collection
+ * @param {Number} target
  * @returns {Number}
  */
 const leftBorder = (collection, target) => {
@@ -12,8 +12,7 @@ const leftBorder = (collection, target) => {
     const middle = Math.trunc((left + right) / 2);
     if (collection[middle] < target) {
       left = middle;
-    }
-    else { // collection[middle] >= target
+    } else { // collection[middle] >= target
       right = middle;
     }
   }
@@ -21,8 +20,8 @@ const leftBorder = (collection, target) => {
 };
 /**
  * @description Return right border in binary search
- * @param {Object []} collection 
- * @param {Number} target 
+ * @param {Object []} collection
+ * @param {Number} target
  * @returns {Number}
  */
 const rightBorder = (collection, target) => {
@@ -32,8 +31,7 @@ const rightBorder = (collection, target) => {
     const middle = Math.trunc((left + right) / 2);
     if (collection[middle] > target) {
       right = middle;
-    }
-    else { // collection[middle] >= target
+    } else { // collection[middle] >= target
       left = middle;
     }
   }
@@ -41,16 +39,16 @@ const rightBorder = (collection, target) => {
 };
 /**
  * @link https://leetcode.com/problems/binary-search/
- * @description write a function to search target in nums. 
+ * @description write a function to search target in nums.
  * If target exists, then return its index. Otherwise, return -1.
- * @param {Object []} collection 
- * @param {Number} target 
- * @returns 
+ * @param {Object []} collection
+ * @param {Number} target
+ * @returns
  */
 const binarySearch = (collection, target) => {
   const leftBoundary = leftBorder(collection, target);
   const rightBondary = rightBorder(collection, target);
-  if(rightBondary - leftBoundary === 1) {
+  if (rightBondary - leftBoundary === 1) {
     return -1;
   }
   return leftBoundary + 1;

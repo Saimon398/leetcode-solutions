@@ -1,10 +1,10 @@
 /**
  * @link https://leetcode.com/problems/sqrtx/submissions/
  * @description Return the square root of x.
- * @param {Number} number 
+ * @param {Number} number
  * @returns {Number}
  */
- const mySqrt = (number) => {
+const mySqrt = (number) => {
   let ans = 0;
   let sqrt = 0;
   let e = number;
@@ -13,11 +13,10 @@
     if (middle * middle === number) {
       return middle;
     }
-    else if (middle * middle < number)  {
+    if (middle * middle < number) {
       sqrt = middle + 1;
       ans = middle;
-    }
-    else {
+    } else {
       e = middle - 1;
     }
   }

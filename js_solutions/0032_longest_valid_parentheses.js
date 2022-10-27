@@ -1,30 +1,29 @@
 /**
  * @link https://leetcode.com/problems/longest-valid-parentheses/
  * @description Find the length of the longest valid (well-formed) parentheses substring.
- * @param {String} str 
+ * @param {String} str
  * @returns {Number}
  */
-const longestValidParentheses = (str) => {
+const longestValidParentheses = (string) => {
   const stack = [];
-  const counter = new Array(str.length).fill(-Infinity);
+  const counter = new Array(string.length).fill(-Infinity);
 
-  for(let i = 0; i < str.length; i += 1) {
-    const bracket = str[i];
+  for (let i = 0; i < string.length; i += 1) {
+    const bracket = string[i];
 
-    if(bracket === ')' && string[stack[stack.length - 1]] === '(') {
+    if (bracket === ')' && string[stack[stack.length - 1]] === '(') {
       counter[i] = 1;
       counter[stack[stack.length - 1]] = 1;
       stack.pop();
-    }
-    else {
+    } else {
       stack.push();
     }
   }
 
-  for(let i = 1; i < string.length; i += 1) {
+  for (let i = 1; i < string.length; i += 1) {
     counter[i] = Math.max(counter[i], counter[i] + counter[i - 1]);
   }
   counter.push(0);
-  
+
   return Math.max(...counter);
 };

@@ -9,7 +9,8 @@ const lengthOfLongestSubstring = (string) => {
   let maxLength = 0;
 
   // Iterate through string
-  for (const char of string) {
+  for (let i = 0; i < string.length; i += 1) {
+    const char = string[i];
     // Search index of first occurence in the sequence
     const index = sequence.indexOf(char);
     sequence.push(char);

@@ -1,19 +1,19 @@
 /**
  * @link https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
- * @param {Object []} prices 
+ * @param {Object []} prices
  * @returns {Number}
  */
 const maxProfit = (prices) => {
   let totalProfit = 0;
-  const length = prices.length;
+  const { length } = prices;
   const set = new Set([0, 1]);
 
-  if(set.has(length)) {
+  if (set.has(length)) {
     return totalProfit;
   }
 
-  for(let i = 1; i < length; i += 1) {
-    if(prices[i - 1] < prices[i]) {
+  for (let i = 1; i < length; i += 1) {
+    if (prices[i - 1] < prices[i]) {
       totalProfit += prices[i] - prices[i - 1];
     }
   }

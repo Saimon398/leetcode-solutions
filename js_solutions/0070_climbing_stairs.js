@@ -5,7 +5,7 @@
  * @param {Number} numberOfStairs Number of stairs
  * @returns {Number}
  */
- const climbStairs = function (numberOfStairs) {
+const climbStairs = (numberOfStairs) => {
   const waysToClimb = new Array(numberOfStairs + 1).fill(0);
   waysToClimb[0] = 0;
   waysToClimb[1] = 1;

@@ -11,7 +11,8 @@ const isValid = (brackets, stack = []) => {
   const openBrackets = new Set(Object.keys(typeOfBrackets));
 
   // Check if open bracket in stack matches close one
-  for (const bracket of brackets) {
+  for (let i = 0; i < brackets.length; i += 1) {
+    const bracket = brackets[i];
     if (openBrackets.has(bracket)) {
       stack.push(bracket);
     } else {

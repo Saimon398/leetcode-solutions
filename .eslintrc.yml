@@ -6,4 +6,10 @@ extends:
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules: {}
+rules:
+  no-unused-vars: 0
+  no-shadow: 0
+  import/extensions:
+    - error
+    - js: always
+  no-param-reassign: 0

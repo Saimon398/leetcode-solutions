@@ -5,13 +5,13 @@
  * answer[i] == "Fizz" if i is divisible by 3.
  * answer[i] == "Buzz" if i is divisible by 5.
  * answer[i] == i (as a string) if none of the above conditions are true.
- * @param {Number} n 
+ * @param {Number} n
  * @returns {Object}
  */
- const fizzBuzz = (n) => {
+const fizzBuzz = (n) => {
   const result = [];
   for (let i = 1; i <= n; i += 1) {
-    if(i % 3 === 0 && i % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
       result.push('FizzBuzz');
     } else if (i % 3 === 0) {
       result.push('Fizz');

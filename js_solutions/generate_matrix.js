@@ -1,11 +1,11 @@
 /**
  * @description Return 2D matrix filled by specific filler
- * @param {Number} rows 
- * @param {Number} columns 
- * @param {any} filler 
+ * @param {Number} rows
+ * @param {Number} columns
+ * @param {any} filler
  * @returns {Object []}
  */
- function generate_matrix(rows, columns, filler) {
+function generateMatrix(rows, columns, filler) {
   const matrix = [];
   for (let i = 0; i < rows; i += 1) {
     const submatrix = [];
@@ -15,6 +15,6 @@
     matrix[i] = submatrix;
   }
   return matrix;
-};
+}
 
-export default generate_matrix;
+export default generateMatrix;

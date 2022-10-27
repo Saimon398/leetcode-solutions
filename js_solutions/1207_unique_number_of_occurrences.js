@@ -1,8 +1,8 @@
 /**
  * @link https://leetcode.com/problems/unique-number-of-occurrences/
- * @description  return true if the number of occurrences of each value 
+ * @description  return true if the number of occurrences of each value
  * in the array is unique, or false otherwise.
- * @param {Object []} collection 
+ * @param {Object []} collection
  * @returns {Boolean}
  */
 const uniqueOccurrences = (collection) => {

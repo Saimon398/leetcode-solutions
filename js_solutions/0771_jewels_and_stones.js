@@ -1,8 +1,8 @@
 /**
  * @link https://leetcode.com/problems/jewels-and-stones/
- * @param {String} jewels 
- * @param {String} stones 
- * @returns 
+ * @param {String} jewels
+ * @param {String} stones
+ * @returns
  */
 const numJewelsandStones = (jewels, stones) => {
   const jewelsSet = new Set(jewels);

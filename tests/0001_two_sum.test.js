@@ -1,7 +1,7 @@
 import { describe, test, expect } from '@jest/globals';
 import twoSum from '../js_solutions/0001_two_sum.js';
 
-describe('Testing twoSum function', () => {
+describe('Testing "twoSum" function', () => {
   test('Testing with different values', () => {
   // Should return indices of the two numbers such that they add up to target.
     expect(twoSum([2, 7, 11, 15], 9)).toEqual(expect.arrayContaining([0, 1]));

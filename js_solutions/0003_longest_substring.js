@@ -4,7 +4,7 @@
  * @param {String} string
  * @returns {Number}
  */
-const lengthOfLongestSubstring = (string) => {
+export default (string) => {
   let sequence = [];
   let maxLength = 0;
 

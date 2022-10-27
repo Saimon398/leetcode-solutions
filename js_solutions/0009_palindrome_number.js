@@ -4,7 +4,7 @@
  * @param {Number} number
  * @returns {Boolean}
  */
-const isPalindrome = (number) => {
+export default (number) => {
   const string = number.toString();
   for (let i = 0, j = string.length - 1; i < j; i += 1, j -= 1) {
     if (string[i] !== string[j]) {

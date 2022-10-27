@@ -11,5 +11,5 @@ describe('Testing "lengthOfLongestSubstring" function', () => {
   test('Testing with empty string', () => {
     // Should return 0, b/c string is empty
     expect(lengthOfLongestSubstring("")).toEqual(0);
-  })
+  });
 })

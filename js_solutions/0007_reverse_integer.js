@@ -4,7 +4,7 @@
  * @param {Number} x
  * @returns {Number}
  */
-const reverse = (x) => {
+export default (x) => {
   // Convert number to a string
   let result = '';
   const str = Math.abs(x).toString();

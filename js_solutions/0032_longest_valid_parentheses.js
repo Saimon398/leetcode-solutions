@@ -4,7 +4,7 @@
  * @param {String} str
  * @returns {Number}
  */
-const longestValidParentheses = (string) => {
+export default (string) => {
   const stack = [];
   const counter = new Array(string.length).fill(-Infinity);
 
@@ -16,7 +16,7 @@ const longestValidParentheses = (string) => {
       counter[stack[stack.length - 1]] = 1;
       stack.pop();
     } else {
-      stack.push();
+      stack.push(i);
     }
   }
 

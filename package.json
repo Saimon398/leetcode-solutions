@@ -1,0 +1,26 @@
+{
+  "name": "leetcode-solutions",
+  "version": "0.0.1",
+  "description": "A tiny collection of all my leetcode solutions in JS and Python",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saimon398/Problem-Solution.git"
+  },
+  "author": "otdameskapizm <aleksborislavskij@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saimon398/Problem-Solution/issues"
+  },
+  "homepage": "https://github.com/Saimon398/Problem-Solution#readme",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.2.2"
+  }
+}

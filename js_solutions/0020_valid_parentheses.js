@@ -5,7 +5,7 @@
  * @param {Object} stack
  * @returns {Boolean}
  */
-const isValid = (brackets, stack = []) => {
+export default (brackets, stack = []) => {
   const typeOfBrackets = { '(': ')', '{': '}', '[': ']' };
   // Set is used to make brackets search faster
   const openBrackets = new Set(Object.keys(typeOfBrackets));

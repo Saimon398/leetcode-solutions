@@ -5,7 +5,7 @@
  * @param {String} string
  * @returns {String}
  */
-const reverseVowels = (string) => {
+export default (string) => {
   const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
   const letters = string.split('');
 

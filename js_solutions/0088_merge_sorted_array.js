@@ -7,7 +7,7 @@
  * @param {Object []} nums2
  * @param {Number} n
  */
-const mergeSortedArray = (nums1, m, nums2, n) => {
+export default (nums1, m, nums2, n) => {
   // Iterate through both of the given arrays simultaneously
   while (m > 0 && n > 0) {
     const curr1 = nums1[m - 1];

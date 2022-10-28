@@ -4,7 +4,7 @@
  * which is given as an array of characters
  * @param {Object []} str
  */
-const reverseString = (str) => {
+export default (str) => {
   for (let i = 0, j = str.length - 1; i < j; i += 1, j -= 1) {
     const temp = str[i];
     str[i] = str[j];

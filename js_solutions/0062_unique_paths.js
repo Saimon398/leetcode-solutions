@@ -8,7 +8,7 @@ import generateMatrix from './generate_matrix.js';
  * @param {Number} columns
  * @returns {Number}
  */
-const uniquePaths = (rows, columns) => {
+export default (rows, columns) => {
   // Generate grid to count possible ways
   const grid = generateMatrix(rows, columns, 0);
 

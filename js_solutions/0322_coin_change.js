@@ -9,7 +9,7 @@
  * @param {Number} totalAmount
  * @returns {Number}
  */
-const coinChange = (coins, totalAmount) => {
+export default (coins, totalAmount) => {
   const coinsToPayAmount = new Array(totalAmount + 1).fill(Infinity);
   coinsToPayAmount[0] = 0;
 

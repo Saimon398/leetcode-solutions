@@ -42,3 +42,5 @@ const sortColors = (colors) => {
     i += 1;
   }
 };
+
+export default sortColors;

@@ -6,6 +6,6 @@ describe('Testing "uniquePaths" function', () => {
     // Should return number of unique ways
     expect(uniquePaths(4, 4)).toEqual(20);
     expect(uniquePaths(3, 7)).toEqual(28);
-    expect(uniquePaths(1,1)).toEqual(1);
+    expect(uniquePaths(1, 1)).toEqual(1);
   });
 });

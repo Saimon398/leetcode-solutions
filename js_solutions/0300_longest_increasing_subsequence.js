@@ -4,7 +4,7 @@
  * @param {Object []} sequence
  * @returns {Object []}
  */
-const LIS = (sequence) => {
+export default (sequence) => {
   const subsequenceLength = new Array(sequence.length).fill(0);
 
   // Iterate through all nums in sequence and compare

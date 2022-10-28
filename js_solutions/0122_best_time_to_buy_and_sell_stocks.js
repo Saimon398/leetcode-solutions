@@ -3,7 +3,7 @@
  * @param {Object []} prices
  * @returns {Number}
  */
-const maxProfit = (prices) => {
+export default (prices) => {
   let totalProfit = 0;
   const { length } = prices;
   const set = new Set([0, 1]);

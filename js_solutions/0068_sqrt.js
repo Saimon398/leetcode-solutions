@@ -4,7 +4,7 @@
  * @param {Number} number
  * @returns {Number}
  */
-const mySqrt = (number) => {
+export default (number) => {
   let ans = 0;
   let sqrt = 0;
   let e = number;

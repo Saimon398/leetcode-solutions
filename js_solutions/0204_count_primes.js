@@ -5,7 +5,7 @@
  * @param {Number} counter
  * @returns {Number}
  */
-const countPrimes = (number, counter = 0) => {
+export default (number, counter = 0) => {
   // Consider that all indices in array, starting
   // from 2 are prime numbers
   const primeNumbers = new Array(number).fill(true);

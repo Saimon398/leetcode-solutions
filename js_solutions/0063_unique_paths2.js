@@ -7,7 +7,7 @@ import generateMatrix from './generate_matrix.js';
  * @param {Object []} obstacleGrid
  * @returns {Number}
  */
-const uniquePathsWithObstacles = (obstacleGrid) => {
+export default (obstacleGrid) => {
   const rows = obstacleGrid.length;
   const columns = obstacleGrid[0].length;
   const possibleWays = generateMatrix(rows, columns, 0);

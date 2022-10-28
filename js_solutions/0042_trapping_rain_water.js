@@ -6,7 +6,7 @@
  * @param {Object []} heights
  * @returns {Number}
  */
-const trap = (heights) => {
+export default (heights) => {
   const maxes = new Array(heights.length).fill(0);
 
   let leftMax = 0;

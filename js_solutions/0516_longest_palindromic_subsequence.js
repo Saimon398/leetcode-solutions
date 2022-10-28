@@ -7,7 +7,7 @@ import generateMatrix from './generate_matrix.js';
  * @param {*} string
  * @returns
  */
-const longestPalindromicSubsequence = (string) => {
+export default (string) => {
   const N = string.length;
   const matrix = generateMatrix(N, N, 0);
 

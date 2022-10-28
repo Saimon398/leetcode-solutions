@@ -7,7 +7,7 @@ import generateMatrix from './generate_matrix.js';
  * @param {*} grid
  * @returns
  */
-const minPathSum = (grid) => {
+export default (grid) => {
   const rows = grid.length;
   const columns = grid[0].length;
   const costs = generateMatrix(rows, columns, 0);

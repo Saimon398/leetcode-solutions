@@ -4,7 +4,7 @@
  * @param {*} nums
  * @returns
  */
-const containsDuplicate = (nums) => {
+export default (nums) => {
   const numsSeen = new Set();
   for (let i = 0; i < nums.length; i += 1) {
     const currentNum = nums[i];

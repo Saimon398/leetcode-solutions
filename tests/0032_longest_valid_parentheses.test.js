@@ -4,7 +4,7 @@ import longestValidParentheses from '../js_solutions/0032_longest_valid_parenthe
 describe('Testing "longestValidParentheses" function', () => {
   test('Testing valid parentheses', () => {
     // Should return length of longest valid parentheses
-    expect(longestValidParentheses(")()())")).toEqual(4);
+    expect(longestValidParentheses(')()())')).toEqual(4);
     expect(longestValidParentheses('()')).toEqual(2);
   });
   test('Testing invalid parentheses', () => {

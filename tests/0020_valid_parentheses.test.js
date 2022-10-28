@@ -9,7 +9,7 @@ describe('Testing "isValid" function', () => {
     expect(isValid('[](){}')).toBeTruthy();
   });
   test('Testing false options', () => {
-     // Should return false, b/c sequence is incorrect
+    // Should return false, b/c sequence is incorrect
     expect(isValid(')')).toBeFalsy();
     expect(isValid('()}')).toBeFalsy();
     expect(isValid('()[}')).toBeFalsy();

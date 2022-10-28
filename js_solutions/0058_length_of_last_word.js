@@ -4,7 +4,10 @@
  * @param {String} string
  * @returns {Number}
  */
-const lengthOfLastWord = (string) => {
+export default (string) => {
+  if (string.length === 0) {
+    return 0;
+  }
   // Split string by array of words
   const words = string.split(' ');
   const filtered = [];

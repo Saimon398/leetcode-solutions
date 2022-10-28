@@ -5,7 +5,7 @@
  * @param {String} target
  * @returns
  */
-const isSubsequence = (sub, target) => {
+export default (sub, target) => {
   // If strings are the same length, they must be identical
   if (sub.length === target.length) {
     return sub === target;

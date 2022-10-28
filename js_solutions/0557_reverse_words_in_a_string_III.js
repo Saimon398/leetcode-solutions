@@ -4,7 +4,7 @@
  * @param {String} string
  * @returns {String}
  */
-const reverseWords = (string) => {
+export default (string) => {
   // Split string into the words
   const words = string.split(' ');
   const newWords = [];

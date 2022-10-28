@@ -4,7 +4,7 @@
  * @param {Object []} digits
  * @returns {Object}
  */
-const plusOne = (digits) => {
+export default (digits) => {
   const numDigits = digits.length;
   const ans = new Array(numDigits).fill(0);
   let currIndex = numDigits - 1;

@@ -8,6 +8,9 @@ import generateMatrix from './generate_matrix.js';
  * @returns {Number}
  */
 export default (obstacleGrid) => {
+  if (!(obstacleGrid instanceof Object)) {
+    throw new Error('Input data must be type of Array');
+  }
   const rows = obstacleGrid.length;
   const columns = obstacleGrid[0].length;
   const possibleWays = generateMatrix(rows, columns, 0);

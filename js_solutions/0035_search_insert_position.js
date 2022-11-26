@@ -1,8 +1,8 @@
 /**
  * @link https://leetcode.com/problems/search-insert-position/
  * @description Return the index if the target is found in the collection
- * @param {Array []} collection 
- * @param {Number} target 
+ * @param {Array []} collection
+ * @param {Number} target
  * @returns {Number}
  */
 const searchInsert = (collection, target) => {
@@ -25,7 +25,6 @@ const searchInsert = (collection, target) => {
     // Case 3: taken element equals target
       return middleIndex;
     }
-  };
+  }
   return lowerBound + 1;
 };
-

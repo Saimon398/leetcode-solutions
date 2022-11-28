@@ -5,8 +5,10 @@
  */
 const findDigitsSquate = (num) => {
   let sumOfDigitsSquares = 0;
-
+  // Iterate till sum is greater than 1
   while (num > 0) {
+    // Every iteration last digit if given number is taken
+    // and its square added to the sum
     const lastDigit = num % 10;
     sumOfDigitsSquares += lastDigit ** 2;
     num = Math.trunc(num / 10);
@@ -23,6 +25,8 @@ const findDigitsSquate = (num) => {
  */
 const isHappy = (num) => {
   let iterationCount = 0;
+  // Considering that 1000 iterations is enough for 
+  // checking if given number is happy or not (might be more)
   while (iterationCount !== 1000) {
     num = findDigitsSquate(num);
     if (num === 1) return true;

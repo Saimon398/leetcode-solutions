@@ -4,7 +4,7 @@
  * @param {Number} num
  * @returns {Boolean}
  */
-const isPowerOfThree = (num) => {
+export default (num) => {
   while (num > 1) {
     num /= 3;
   }

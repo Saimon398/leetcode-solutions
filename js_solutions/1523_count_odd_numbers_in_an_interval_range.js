@@ -5,7 +5,7 @@
  * @param {Number} high
  * @returns {Number}
  */
-const countOdds = (low, high) => {
+export default (low, high) => {
   let count = 0;
   for (let i = low; i <= high; i += 1) {
     count += i % 2 === 1 ? 1 : 0;

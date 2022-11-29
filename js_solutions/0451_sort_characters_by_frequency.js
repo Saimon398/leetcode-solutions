@@ -5,7 +5,7 @@
  * @param {String} str String to be sorted
  * @returns {String}
  */
-const frequencySort = (str) => {
+export default (str) => {
   // Find array of frequencies of chars in the string
   const frequency = str.split('')
     .reduce((acc, char) => {

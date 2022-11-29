@@ -5,7 +5,7 @@
  * @param {Array []} nums
  * @returns {Number}
  */
-const missingNumber = (nums) => {
+export default (nums) => {
   let result = 0;
   for (let i = 0; i < nums.length; i += 1) {
     result = result ^ i ^ nums[i];

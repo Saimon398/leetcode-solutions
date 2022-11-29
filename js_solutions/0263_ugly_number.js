@@ -4,7 +4,7 @@
  * @param {Number} num
  * @returns {Boolean}
  */
-const isUgly = (num) => {
+export default (num) => {
   if (num === 0) return false;
   const limits = [2, 3, 5];
   // Iterate through the limits and check if

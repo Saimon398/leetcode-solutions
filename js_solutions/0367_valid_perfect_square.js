@@ -5,7 +5,7 @@
  * @param {Number} num
  * @returns {Boolean}
  */
-const validPerfectSquare = (num) => {
+export default (num) => {
   // Check square of div till reaching given num
   let div = 1;
   while (div * div < num) {

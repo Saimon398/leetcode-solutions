@@ -5,7 +5,7 @@
  * @param {Array []} nums
  * @returns {Number}
  */
-const averageValue = (nums) => {
+export default (nums) => {
   const filteredNums = nums
   // Even numbers and divisible by 3
     .filter((num) => num % 2 === 0 && num % 3 === 0);

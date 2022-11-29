@@ -6,7 +6,7 @@
  * @param {Array []} nums
  * @returns {Number}
  */
-const findSpecialInteger = (nums) => {
+export default (nums) => {
   // Find 25 %
   const quarter = Math.trunc(nums.length / 4);
   const frequency = {};

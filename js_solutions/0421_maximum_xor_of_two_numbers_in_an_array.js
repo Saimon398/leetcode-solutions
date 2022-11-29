@@ -4,7 +4,7 @@
  * @param {Array []} nums
  * @returns {Number}
  */
-const findMaximumXOR = (nums) => {
+export default (nums) => {
   // To make algo work faster
   const set = [...new Set(nums)];
   if (set.length === 1) return 0;

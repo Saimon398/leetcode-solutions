@@ -6,7 +6,7 @@
  * @param {Number} y
  * @returns {Number}
  */
-const hammingDistance = (x, y) => {
+export default (x, y) => {
   const xor = x ^ y;
   let hammingDistance = 0;
   for (const bit of xor.toString(2)) {

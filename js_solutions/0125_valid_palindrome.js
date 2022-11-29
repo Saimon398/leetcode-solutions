@@ -1,11 +1,11 @@
 /**
  * @link https://leetcode.com/problems/valid-palindrome/
  * @description Given a string s, return true if it is a palindrome, or false otherwise.
- * @param {String} str String to be checked 
+ * @param {String} str String to be checked
  * @returns {Boolean}
  */
 const isPalindrome = (str) => {
-  const length = str.length;
+  const { length } = str;
   // Case 1: Empty string is always a palindrome
   if (length === 0 || length === 1) {
     return true;

@@ -25,7 +25,7 @@ const findDigitsSquate = (num) => {
  */
 const isHappy = (num) => {
   let iterationCount = 0;
-  // Considering that 1000 iterations is enough for 
+  // Considering that 1000 iterations is enough for
   // checking if given number is happy or not (might be more)
   while (iterationCount !== 1000) {
     num = findDigitsSquate(num);

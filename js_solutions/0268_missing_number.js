@@ -2,7 +2,7 @@
  * @link https://leetcode.com/problems/missing-number/
  * @description Return the only number in the range
  * that is missing from the array.
- * @param {Array []} nums 
+ * @param {Array []} nums
  * @returns {Number}
  */
 const missingNumber = (nums) => {

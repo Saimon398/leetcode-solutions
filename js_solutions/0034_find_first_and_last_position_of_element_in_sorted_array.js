@@ -1,7 +1,7 @@
 /**
  * @description Return the lower bound of target appearance in the array
- * @param {Array []} nums 
- * @param {Number} target 
+ * @param {Array []} nums
+ * @param {Number} target
  * @returns {Number}
  */
 const lowerBound = (nums, target) => {
@@ -12,8 +12,7 @@ const lowerBound = (nums, target) => {
     const middleIndex = Math.trunc((lowerBound + upperBound) / 2);
     if (nums[middleIndex] < target) {
       lowerBound = middleIndex;
-    }
-    else {
+    } else {
       upperBound = middleIndex;
     }
   }
@@ -21,9 +20,9 @@ const lowerBound = (nums, target) => {
 };
 /**
  * @description Return the upper bound of target appearance in the array
- * @param {Array []} nums 
- * @param {Number} target 
- * @returns {Number} 
+ * @param {Array []} nums
+ * @param {Number} target
+ * @returns {Number}
  */
 const upperBound = (nums, target) => {
   let lowerBound = -1;
@@ -33,8 +32,7 @@ const upperBound = (nums, target) => {
     const middleIndex = Math.trunc((lowerBound + upperBound) / 2);
     if (nums[middleIndex] > target) {
       upperBound = middleIndex;
-    }
-    else {
+    } else {
       lowerBound = middleIndex;
     }
   }
@@ -42,10 +40,10 @@ const upperBound = (nums, target) => {
 };
 /**
  * @link https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
- * @description Given an array of integers nums sorted in non-decreasing order, 
+ * @description Given an array of integers nums sorted in non-decreasing order,
  * find the starting and ending position of a given target value.
- * @param {Array []} nums 
- * @param {Number} target 
+ * @param {Array []} nums
+ * @param {Number} target
  * @returns {Array []}
  */
 const searchRange = (nums, target) => {

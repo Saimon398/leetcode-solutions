@@ -18,5 +18,5 @@ const frequencySort = (str) => {
     .reduce((acc, [char, frequency]) => {
       acc += char.repeat(frequency);
       return acc;
-    }, '')
+    }, '');
 };
